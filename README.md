@@ -4,15 +4,15 @@ This plugin was born out of the necessity to have relative line numbers closers 
 
 so it would be easier and faster to eye scan and jump to the correct line.
 
-# Setup with Lazy
+### Setup with Lazy
 
-```
-  {
-    "gvlatko/inline-relative-numbers.nvim",
-    config = function() require("inline-relative-numbers").setup {} end,
-    event = "BufRead",
-  },
+`
+{
+"gvlatko/inline-relative-numbers.nvim",
+config = function() require("inline-relative-numbers").setup {} end,
+event = "BufRead",
+},
 
-```
+`
 
-Credit to (https://github.com/lukas-reineke/virt-column.nvim)[https://github.com/lukas-reineke/virt-column.nvim]
+Credit to [https://github.com/lukas-reineke/virt-column.nvim](https://github.com/lukas-reineke/virt-column.nvim)
