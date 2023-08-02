@@ -4,6 +4,8 @@ This plugin was born out of the necessity to have relative line numbers closers 
 
 so it would be easier and faster to eye scan and jump to the correct line.
 
+![Inline Relative Numbers](san-juan-mountains.gif "Inline Relative Numbers")
+
 ### Setup with Lazy
 
 `
