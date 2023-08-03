@@ -45,6 +45,14 @@ M.refresh = function()
 
     local mode = vim.api.nvim_get_mode()["mode"]
 
+    local bufType = vim.api.nvim_get_option_value("buftype", {
+        buf = bufnr,
+    })
+
+    if bufType == "terminal" or bufType == "prompt" then
+        return
+    end
+
     if mode == "i" then
         for _, m in pairs(M.marks) do
             vim.api.nvim_buf_del_extmark(bufnr, M.namespace, m)
